@@ -1,10 +1,69 @@
 [
-  { "id": 1, "name": "GreenVolt Hub", "address": "Baner Road, Pune", "lat": 18.5590, "lng": 73.7868, "powerKw": 60, "connector": "CCS2", "pricePerKwh": 18, "rating": 4.3, "availableChargers": 2, "totalChargers": 4 },
-  { "id": 2, "name": "ChargeNest Station", "address": "Hinjewadi Phase 1, Pune", "lat": 18.5913, "lng": 73.7389, "powerKw": 120, "connector": "CCS2", "pricePerKwh": 24, "rating": 4.6, "availableChargers": 1, "totalChargers": 3 },
-  { "id": 3, "name": "VoltPoint Express", "address": "Kothrud, Pune", "lat": 18.5074, "lng": 73.8077, "powerKw": 90, "connector": "CCS2", "pricePerKwh": 21, "rating": 4.1, "availableChargers": 3, "totalChargers": 4 },
-  { "id": 4, "name": "EcoCharge Plaza", "address": "Viman Nagar, Pune", "lat": 18.5679, "lng": 73.9143, "powerKw": 60, "connector": "CHAdeMO", "pricePerKwh": 17, "rating": 3.9, "availableChargers": 0, "totalChargers": 2 },
-  { "id": 5, "name": "PowerLane Fast Charge", "address": "Wakad, Pune", "lat": 18.5987, "lng": 73.7600, "powerKw": 120, "connector": "CCS2", "pricePerKwh": 26, "rating": 4.8, "availableChargers": 2, "totalChargers": 6 },
-  { "id": 6, "name": "AmpStop Station", "address": "Hadapsar, Pune", "lat": 18.5089, "lng": 73.9260, "powerKw": 90, "connector": "CCS2", "pricePerKwh": 20, "rating": 4.0, "availableChargers": 1, "totalChargers": 2 },
-  { "id": 7, "name": "SparkWay Charging", "address": "Aundh, Pune", "lat": 18.5580, "lng": 73.8075, "powerKw": 60, "connector": "CCS2", "pricePerKwh": 16, "rating": 4.2, "availableChargers": 2, "totalChargers": 3 },
-  { "id": 8, "name": "TurboCharge Point", "address": "Magarpatta, Pune", "lat": 18.5158, "lng": 73.9272, "powerKw": 120, "connector": "CCS2", "pricePerKwh": 25, "rating": 4.5, "availableChargers": 0, "totalChargers": 4 }
+  {
+    "id": 1, "name": "GreenVolt Hub", "address": "Baner Road, Pune",
+    "lat": 18.5590, "lng": 73.7868, "rating": 4.3, "isDemoData": true,
+    "chargers": [
+      { "id": "st1-c1", "ratedPowerKw": 60,  "connectorType": "CCS2", "pricePerKwh": 18, "demoStatus": "available" },
+      { "id": "st1-c2", "ratedPowerKw": 90,  "connectorType": "CCS2", "pricePerKwh": 21, "demoStatus": "occupied" },
+      { "id": "st1-c3", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 24, "demoStatus": "available" }
+    ]
+  },
+  {
+    "id": 2, "name": "ChargeNest Station", "address": "Hinjewadi Phase 1, Pune",
+    "lat": 18.5913, "lng": 73.7389, "rating": 4.6, "isDemoData": true,
+    "chargers": [
+      { "id": "st2-c1", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 24, "demoStatus": "occupied" },
+      { "id": "st2-c2", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 24, "demoStatus": "available" },
+      { "id": "st2-c3", "ratedPowerKw": 60,  "connectorType": "CCS2", "pricePerKwh": 17, "demoStatus": "offline" }
+    ]
+  },
+  {
+    "id": 3, "name": "VoltPoint Express", "address": "Kothrud, Pune",
+    "lat": 18.5074, "lng": 73.8077, "rating": 4.1, "isDemoData": true,
+    "chargers": [
+      { "id": "st3-c1", "ratedPowerKw": 90, "connectorType": "CCS2", "pricePerKwh": 21, "demoStatus": "available" },
+      { "id": "st3-c2", "ratedPowerKw": 90, "connectorType": "CCS2", "pricePerKwh": 21, "demoStatus": "available" }
+    ]
+  },
+  {
+    "id": 4, "name": "EcoCharge Plaza", "address": "Viman Nagar, Pune",
+    "lat": 18.5679, "lng": 73.9143, "rating": 3.9, "isDemoData": true,
+    "chargers": [
+      { "id": "st4-c1", "ratedPowerKw": 60, "connectorType": "CHAdeMO", "pricePerKwh": 17, "demoStatus": "occupied" },
+      { "id": "st4-c2", "ratedPowerKw": 60, "connectorType": "CCS2" }
+    ]
+  },
+  {
+    "id": 5, "name": "PowerLane Fast Charge", "address": "Wakad, Pune",
+    "lat": 18.5987, "lng": 73.7600, "rating": 4.8, "isDemoData": true,
+    "chargers": [
+      { "id": "st5-c1", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 26, "demoStatus": "available" },
+      { "id": "st5-c2", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 26, "demoStatus": "occupied" },
+      { "id": "st5-c3", "ratedPowerKw": 90,  "connectorType": "CCS2", "pricePerKwh": 22, "demoStatus": "available" }
+    ]
+  },
+  {
+    "id": 6, "name": "AmpStop Station", "address": "Hadapsar, Pune",
+    "lat": 18.5089, "lng": 73.9260, "rating": 4.0, "isDemoData": true,
+    "chargers": [
+      { "id": "st6-c1", "ratedPowerKw": 90, "connectorType": "CCS2",    "pricePerKwh": 20, "demoStatus": "available" },
+      { "id": "st6-c2", "ratedPowerKw": 60, "connectorType": "CHAdeMO", "pricePerKwh": 19, "demoStatus": "occupied" }
+    ]
+  },
+  {
+    "id": 7, "name": "SparkWay Charging", "address": "Aundh, Pune",
+    "lat": 18.5580, "lng": 73.8075, "isDemoData": true,
+    "chargers": [
+      { "id": "st7-c1", "ratedPowerKw": 60, "connectorType": "CCS2", "pricePerKwh": 16, "demoStatus": "available" },
+      { "id": "st7-c2", "ratedPowerKw": 60, "connectorType": "CCS2", "pricePerKwh": 16, "demoStatus": "offline" }
+    ]
+  },
+  {
+    "id": 8, "name": "TurboCharge Point", "address": "Magarpatta, Pune",
+    "lat": 18.5158, "lng": 73.9272, "rating": 4.5, "isDemoData": true,
+    "chargers": [
+      { "id": "st8-c1", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 25, "demoStatus": "occupied" },
+      { "id": "st8-c2", "ratedPowerKw": 120, "connectorType": "CCS2", "pricePerKwh": 25, "demoStatus": "offline" }
+    ]
+  }
 ]
